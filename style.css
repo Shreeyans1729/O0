@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  width: 300px;
+  height: 379px;
+  background: url("dev1.jpg") center center no-repeat;
+  background-size: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.8s ease, background-size 0.8s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card:hover {
+  background: url("dev2.jpg") left center no-repeat;
+  background-size: 500px;
+}
+
+.card.alt {
+    background: url("dev2.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card.alt:hover {
+    background: url("dev1.jpg") right center no-repeat;
+    background-size: 600px;
+}
+
+
+
+
